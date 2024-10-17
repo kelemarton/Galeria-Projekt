@@ -1,0 +1,59 @@
+.homepageDiv{
+    width: 100%;
+    height: 400px;
+    background-color: #841b2d;
+    border-radius: 50px;
+}
+
+.typewriteText{
+    font-size: 30px;
+    color: #b0b0b0;
+    font-family: Arima;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    .typewrite{
+        color: white;
+        background-color: #b72740;
+        padding: 5px;
+        border-radius: 20px;
+    }
+}
+
+.searchbar{
+    width: 50%;
+    height: 50px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 90px;
+    border-radius: 100px;
+
+    img{
+        height: 30px;
+        position: relative;
+        top: 10px;
+        left: 20px
+    }
+    input[type="text"]{
+        height: 40px;
+        width: 85%;
+        position: relative;
+        left: 20px;
+        top: 2px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        background: none;
+    }
+}
+
+
+.galleryNav{
+    height: 60px;
+    width: 50%;
+    background-color: #a5243a;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 100px;
+}
