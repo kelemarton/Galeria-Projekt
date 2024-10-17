@@ -1,11 +1,32 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 
 
 /*HEADER*/
 header{
     padding-top: -10px;
-    height: 80px;
+    height: 60px;
     width: 100%;
     background-color: #5218fa;
     border-radius: 0px 0px 20px 20px;
+}
+.navBasic{
+    padding-top: 15px;
+    padding-left: 100px;
+
+    button{
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: white;
+        font-family: Arima;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    a{
+        font-size: 20px;
+        color: white;
+        font-family: Arima;
+        text-decoration: none;
+    }
 }
