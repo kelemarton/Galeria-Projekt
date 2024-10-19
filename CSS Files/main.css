@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 
+/*!⬇《《《《《PREMADES》》》》》⬇*/
+.pageBreaker{
+    padding: 20px;
+}
+.pageDiv{
+    margin: 0 auto;
+    width: 80%;
+}
+.t1{
+    font-size: 60px;
+    color: white;
+    font-family: Arima;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.t2{
+    font-size: 40px;
+    color: white;
+    font-family: Arima;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .pageDiv{
+        width: 95%;
+    }
+}
+
+/*!⬆《《《《《PREMADES》》》》》⬆*/
+
+
 
 /**⬇《《《《《HEADER》》》》》⬇*/
 header{
@@ -46,13 +79,13 @@ header{
     }
 }
 .navBasic{ /*?Navigációs Gombok*/
-    gap: 20px;
+    gap: 15px;
     display: flex;
     margin: 0;
     padding: 0;
     position: relative;
     top: 20px;
-    right: 40px;
+    right: -5px;
 
     button {
         background: none;

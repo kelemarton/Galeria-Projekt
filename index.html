@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="CSS Files/bg.css">
     <link rel="stylesheet" href="CSS Files/main.css">
+    <link rel="stylesheet" href="CSS Files/index.css">
 
     <link rel="icon" type="image/png" href="Images/NavLogo.png">
     <title>Home</title>
@@ -17,7 +18,47 @@
     <script src="a1navbarRes.js"></script>
     <!--!HEADER IMPORT⬆-->
 
+    <div class="pageBreaker"></div>
 
+    <div class="pageDiv">
+        <div class="homepageDiv">
+            <div class="homepageDivTitle">
+                <p class="t1" style="padding-top: 50px;">「Cornered Culture」</p>
+                <p class="typewriteText">
+                    We share
+                    <i href="" class="typewrite" data-period="2000" data-type='[ "captivating paintings", "remarkable sculptures", "the power of creativity", "art that transforms spaces" ]'>
+                        <span class="wrap"></span>
+                    </i>
+                    with every masterpiece...
+                </p>
+                <script src="indexTyping.js"></script>
+            </div>
+            <div class="searchbar">
+                <img src="Images/magnifying-glass.png">
+                <input type="text" placeholder="Search by ID..." maxlength="30">
+            </div>
+            
+        </div>
+
+        <div class="galleryNav">
+            <button onclick="gallery()" type="button" class="galleryNavBtn"><img src="Images/icon_gallery.png">All</button>
+            <button onclick="paintings()" type="button" class="galleryNavBtn"><img src="Images/icon_paintings.png">Paintings</button>
+            <button onclick="sculptures()" type="button" class="galleryNavBtn"><img src="Images/icon_sculptures.png">Sculptures</button>
+        </div>
+
+        
+        <div id="galleryDiv">
+
+            
+
+        </div>
+        <script src="Stock/ids.js"></script>
+    </div>
+
+    <div class="viewAll">
+        <a href="gallery.html"><p>View All...</p></a>
+    </div>
     
+    <br><br><br>
 </body>
 </html>
