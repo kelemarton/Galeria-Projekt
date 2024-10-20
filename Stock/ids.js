@@ -168,8 +168,3 @@ function sculptures() {
       galleryDiv.appendChild(galleryElement);
   });
 }
-
-
-
-  // Call the function to create the gallery on page load
-gallery();

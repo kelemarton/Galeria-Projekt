@@ -1,0 +1,144 @@
+
+
+
+@media (min-width: 1601px) {
+    .contactContainerDiv{
+        display: grid;
+        grid-template-columns: auto 600px;
+        grid-gap: 20px;
+        margin: 0 auto;
+    }
+    .contactDiv{
+        .contactDivText{
+            height: 500px;
+            background-color: #841b2d;
+            margin-bottom: 20px;
+            border-radius: 50px;
+
+            p{
+                margin: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: white;
+                font-family: Arima;
+                font-size: 20px;
+            }
+            .t1{
+                font-size: 50px;
+            }
+        }
+    
+        .contactDivSocials{
+            height: 80px;
+            background-color: #a5243a;
+            border-radius: 100px;
+        }
+    }
+    .mapDiv{
+        height: 600px;
+        background-color: #a5243a;
+        border-radius: 50px;
+    
+        iframe{
+            position: relative;
+            top: 5%;
+            left: 5%;
+            border-radius: 30px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .contactContainerDiv{
+        display: grid;
+        grid-template-columns: auto 600px;
+        grid-gap: 20px;
+        margin: 0 auto;
+    }
+    .contactDiv{
+        .contactDivText{
+            height: 500px;
+            background-color: #841b2d;
+            margin-bottom: 20px;
+            border-radius: 50px;
+
+            p{
+                margin: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: white;
+                font-family: Arima;
+                font-size: 16px;
+            }
+            .t1{
+                font-size: 40px;
+            }
+        }
+    
+        .contactDivSocials{
+            height: 80px;
+            background-color: #a5243a;
+            border-radius: 100px;
+        }
+    }
+    .mapDiv{
+        height: 600px;
+        background-color: #a5243a;
+        border-radius: 50px;
+    
+        iframe{
+            position: relative;
+            top: 5%;
+            left: 5%;
+            border-radius: 30px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .contactContainerDiv{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 20px;
+        margin: 0 auto;
+    }
+    .contactDiv{
+        .contactDivText{
+            height: auto;
+            background-color: #841b2d;
+            margin-bottom: 20px;
+            border-radius: 50px;
+
+            p{
+                margin: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                color: white;
+                font-family: Arima;
+                font-size: 16px;
+            }
+            .t1{
+                font-size: 40px;
+            }
+        }
+    
+        .contactDivSocials{
+            height: 80px;
+            background-color: #a5243a;
+            border-radius: 100px;
+        }
+    }
+    .mapDiv{
+        height: 600px;
+        background-color: #a5243a;
+        border-radius: 50px;
+    
+        iframe{
+            position: relative;
+            top: 5%;
+            left: 5%;
+            border-radius: 30px;
+        }
+    }
+}
