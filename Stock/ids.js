@@ -30,7 +30,11 @@ function copyID(id) {
 }
 
 
+function goBuy(id) {
+  localStorage.setItem("buy_id", id);
+  window.location.href = "view.html";
 
+}
 
 //* Function to shuffle the array
 var shouldShuffle = true;
@@ -70,7 +74,7 @@ function gallery() {
       // Add inner content with art info (overlay)
       galleryElement.innerHTML = `
           <div class="galleryElementHover">
-              <div class="artPrice">$${item.price}</div>
+              <div class="artPrice" onclick="goBuy('${item.type + item.id}')" >Buy <br> $${item.price}</div>
               <div class="artShare">
                   <button type="button" onclick="copyID('${item.type + item.id}')">
                       <img src="Images/share.png" alt="Share">
