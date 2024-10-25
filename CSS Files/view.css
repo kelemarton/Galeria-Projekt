@@ -48,6 +48,10 @@ max-height: max-content;
     width: 80%;
     margin-left: 10%;
 }
+.card-title {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
 
 .card-image {
     width: 100%;
@@ -58,7 +62,8 @@ max-height: max-content;
 }
 
 .card-text {
-    font-size: 2em;
+    border-radius: 15px;
+    font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.9);
@@ -76,12 +81,11 @@ max-height: max-content;
     transition: all 0.3s ease;
     align-self: flex-start;
     margin-top: auto;
-
 }
 
 .card-button:hover {
     transform: scale(1.05);
-    background-color: #adadad;
+    background-color: #f0f0f0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -135,5 +139,6 @@ max-height: max-content;
         margin-right: auto;
     }
 }
+
 
 

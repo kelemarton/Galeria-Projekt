@@ -34,7 +34,6 @@ function goBuy(id) {
   localStorage.clear;
   localStorage.setItem("buy_id", id);
   window.location.href = "view.html";
-
 }
 
 //* Function to shuffle the array

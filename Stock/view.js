@@ -94,3 +94,4 @@ function goOrder(){
     window.location.href = "order.html";
     
 }
+
