@@ -90,8 +90,7 @@ orderElement.innerHTML =
 
         <div class="right-column">
             <div class="payment-header">
-                <h2>Payment Details</h2>
-                <div class="price-tag">$499</div>
+                <p class="t2">Payment Details</h2>
             </div>
             
             <div class="btn-group">

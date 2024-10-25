@@ -225,8 +225,13 @@ function SearchBar(){
 
 
 
-  if(s_id == admin){
+  else if(s_id == admin){
     window.location.href = "upload.html";
     return
+  }
+  else
+  {
+    alert(`Not found "${s_id}" id`)
+    return;
   }
 }

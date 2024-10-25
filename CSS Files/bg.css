@@ -5,14 +5,174 @@ body {
   background-size: 200% 200%;
 }
 
-@keyframes rotateAnimation {
+.bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a0e0e;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-plasma {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 50% 50%, 
+      rgba(139, 30, 63, 0.1) 0%,
+      rgba(102, 20, 40, 0.1) 50%,
+      transparent 100%);
+  filter: blur(40px);
+  mix-blend-mode: screen;
+  animation: bgPlasmaMove 15s infinite alternate;
+}
+
+.bg-energy {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(139, 30, 63, 0.05) 0%,
+    rgba(102, 20, 40, 0.05) 10%,
+    rgba(63, 13, 28, 0.05) 20%
+  );
+  animation: bgFieldRotate 40s linear infinite;
+}
+
+.bg-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: bgParticleFloat 20s infinite linear;
+}
+
+.bg-wave {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  opacity: 0.1;
+  background: repeating-radial-gradient(
+    circle at 50% 50%,
+    transparent 0%,
+    #8b1e3f1a 1%,
+    transparent 2%
+  );
+  animation: bgWaveEffect 20s infinite linear;
+  pointer-events: none;
+}
+
+.bg-wave:nth-child(2) {
+  animation-delay: -5s;
+  opacity: 0.05;
+}
+
+.bg-wave:nth-child(3) {
+  animation-delay: -10s;
+  opacity: 0.07;
+}
+
+@keyframes bgPlasmaMove {
   0% {
-      background-position: 0% 50%;
+    transform: scale(1) rotate(0deg);
   }
   50% {
-      background-position: 100% 50%;
+    transform: scale(1.5) rotate(180deg);
   }
   100% {
-      background-position: 0% 50%;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes bgFieldRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bgParticleFloat {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(var(--moveX), var(--moveY));
+    opacity: 0;
+  }
+}
+
+@keyframes bgWaveEffect {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}
+
+.bg-accent {
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(
+    180deg, 
+    transparent,
+    #8b1e3f80,
+    transparent
+  );
+  animation: bgAccentFloat 8s infinite ease-in-out;
+}
+
+@keyframes bgAccentFloat {
+  0%, 100% {
+    transform: translateY(-100%) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0.5;
+  }
+}
+
+/* Reszponzív beállítások */
+@media (max-width: 768px) {
+  .bg-plasma {
+    filter: blur(20px);
+  }
+  
+  .bg-wave {
+    opacity: 0.08;
+  }
+  
+  .bg-accent {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-plasma {
+    filter: blur(10px);
+  }
+  
+  .bg-particle {
+    width: 1px;
+    height: 1px;
   }
 }
