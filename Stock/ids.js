@@ -174,3 +174,59 @@ function sculptures() {
       galleryDiv.appendChild(galleryElement);
   });
 }
+
+/** SearchBar */
+const artSculptureItems_list = artSculptureItems.map(({ id, type }) => `${type}${id}`);
+const artPaintingItems_list = artPaintingItems.map(({ id, type }) => `${type}${id}`);
+console.log(artSculptureItems_list[0])
+
+function SearchBar(){
+  let s_id = document.getElementById("SrcBar").value;
+  const admin = "admin"
+
+  if(s_id == "s"){
+    sculptures();
+    document.getElementById("SrcBar").value = "";
+    return;
+  }
+  else if(s_id == "p")
+  {
+    paintings();
+    document.getElementById("SrcBar").value = "";
+    return;
+  }
+
+  if(s_id[0] == "s")
+  {
+    if(artSculptureItems_list.includes(s_id))
+    {
+      goBuy(s_id);
+      return;
+    }
+    else
+    {
+      alert(`Not found "${s_id}" id`)
+      return;
+    }
+  }
+  else if(s_id[0] == "p")
+  {
+    if(artPaintingItems_list.includes(s_id))
+      {
+        goBuy(s_id);
+        return;
+      }
+      else
+      {
+        alert(`Not found "${s_id}" id`)
+        return;
+      }
+  }
+
+
+
+  if(s_id == admin){
+    window.location.href = "upload.html";
+    return
+  }
+}

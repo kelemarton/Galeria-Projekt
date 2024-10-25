@@ -1,6 +1,6 @@
 let id = localStorage.getItem("buy_id");
 
-if(id == " ")
+if(id == undefined)
 {
     window.location.href = "index.html";
 }
@@ -71,14 +71,12 @@ viewElement.innerHTML =`
 <div class="right-section">
 <div class="right-card"> 
     <p class="t2"> About</p>
-    <p class="card-text" >Create by:  <br> <b><i>${creatorName}</b></i></p>
+    <p class="card-text" >Create by:  <br> <b><i>${creatorName}</b></i></p> 
     <p class="card-text" >Art name:  <br> <b><i>${artName}</b></i></p>
     <p class="card-text" >Art story:  <br> <b><i>${artStory}</b></i></p>
 </div>
 <div class="right-card">
     <p class="t2"> Price</p>
-
-
     <button onclick="goOrder()" class="card-button center">$ ${artPrice}</button>
 </div>
 </div>
@@ -95,3 +93,8 @@ function goOrder(){
     
 }
 
+function copyID(id) {
+    navigator.clipboard.writeText(id).then(() => {
+    alert(`Copied ID: ${id}`);
+    });
+  }

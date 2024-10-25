@@ -1,11 +1,10 @@
 
 let id = localStorage.getItem("buy_id");
 
-if(id == " ")
-{
-    window.location.href = "index.html";
-}
-
+if(id == undefined)
+    {
+        window.location.href = "index.html";
+    }
 
 const artPaintingItems = [
     { id: 1, type: "p", name: 'Avocados', artist: 'Elias Wrenford', price: 499, imgSrc: '../Stock/p1.jpg' , story:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
