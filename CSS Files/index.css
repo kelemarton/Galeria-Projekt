@@ -159,6 +159,7 @@
     text-align: center;
     position: relative;
     left: 200px;
+    cursor: pointer;
 }
 .artShare{
     background-color: #b72740;
