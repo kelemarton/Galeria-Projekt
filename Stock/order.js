@@ -122,7 +122,7 @@ orderElement.innerHTML =
 
                         <div class="form-group">
                             <label for="cvv">CVV</label>
-                            <input type="text" placeholder="123" id="cvv" maxlength="4" required>
+                            <input type="text" placeholder="123" id="cvv" maxlength="3" required>
                             <div class="error" id="cvvError">Please enter a valid CVV</div>
                         </div>
                     </div>
