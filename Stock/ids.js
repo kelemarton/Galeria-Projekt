@@ -62,7 +62,11 @@ function gallery() {
     shuffleArray(combinedArtItems);
   }
 
-  combinedArtItems.forEach(item => {
+  // Only insert 8 items on index.html
+  const url = window.location.href;
+  const itemsToInsert = url.includes('index.html') ? combinedArtItems.slice(0, 8) : combinedArtItems;
+
+  itemsToInsert.forEach(item => {
       // Create the main gallery element div
       const galleryElement = document.createElement('div');
       galleryElement.classList.add('galleryElement');
@@ -105,7 +109,11 @@ function paintings() {
       shuffleArray(artPaintingItems);
     }
 
-    artPaintingItems.forEach(item => {
+    // Only insert 8 items on index.html
+    const url = window.location.href;
+    const itemsToInsert = url.includes('index.html') ? artPaintingItems.slice(0, 8) : artPaintingItems;
+
+    itemsToInsert.forEach(item => {
       // Create the main gallery element div
     const galleryElement = document.createElement('div');
     galleryElement.classList.add('galleryElement');
@@ -146,7 +154,11 @@ function sculptures() {
     shuffleArray(artSculptureItems);
   }
 
-  artSculptureItems.forEach(item => {
+  // Only insert 8 items on index.html
+  const url = window.location.href;
+  const itemsToInsert = url.includes('index.html') ? artSculptureItems.slice(0, 8) : artSculptureItems;
+
+  itemsToInsert.forEach(item => {
       // Create the main gallery element div
       const galleryElement = document.createElement('div');
       galleryElement.classList.add('galleryElement');
