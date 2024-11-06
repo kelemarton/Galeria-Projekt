@@ -178,12 +178,18 @@ header{
 /**⬆《《《《《HEADER》》》》》⬆*/
 
 
-/*!FOOTER⬇*/
+
+/**⬇《《《《《FOOTER》》》》》⬇*/
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    font-family: Arima;
+}
 .footerBG {
     width: 100%;
     background-color: #841b2d;
     border-radius: 25px 25px 0px 0px;
-    transform: translateY(60px);
 }
 .footerBG p {
     text-align: center;
@@ -191,4 +197,4 @@ header{
     font-size: 20px;
 }
 
-/*↑FOOTER↑*/
+/**⬆《《《《《FOOTER》》》》》⬆*/
