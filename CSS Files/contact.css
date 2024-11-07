@@ -33,18 +33,34 @@
             background-color: #a5243a;
             border-radius: 100px;
             display: flex;
-            gap: 100px;
+            gap: 0px;
             overflow: hidden;
 
             .socialItem{
                 margin: 0 auto;
+                width: 100%;
+                display: flex;
+                text-decoration: none !important;
+
+                background-image: linear-gradient(180deg, #a5243a, #ec3150);
+                transition: background-position 0.3s ease, background-size 0.3s ease;
+                background-size: 100% 600%;
+                background-position: 0 0;
+            }
+            .socialItem:hover{
+                background-position: 0 100%;
+                background-size: 100% 100%;
+            }
+            .centerIt{
+                margin: 0 auto;
                 display: flex;
             }
             img{
-                height: 80%;
+                height: 60%;
                 position: relative;
-                top: 10%;
-                bottom: 10%;
+                top: 20%;
+                bottom: 20%;
+                right: 5px;
             }
             p{
                 font-family: Arima;
@@ -53,7 +69,6 @@
                 position: relative;
                 bottom: 10px;
                 left: 5px;
-                right: 5px;
             }
         }
     }
@@ -102,6 +117,44 @@
             height: 80px;
             background-color: #a5243a;
             border-radius: 100px;
+            display: flex;
+            gap: 0px;
+            overflow: hidden;
+
+            .socialItem{
+                margin: 0 auto;
+                width: 100%;
+                display: flex;
+                text-decoration: none !important;
+
+                background-image: linear-gradient(180deg, #a5243a, #ec3150);
+                transition: background-position 0.3s ease, background-size 0.3s ease;
+                background-size: 100% 600%;
+                background-position: 0 0;
+            }
+            .socialItem:hover{
+                background-position: 0 100%;
+                background-size: 100% 100%;
+            }
+            .centerIt{
+                margin: 0 auto;
+                display: flex;
+            }
+            img{
+                height: 60%;
+                position: relative;
+                top: 20%;
+                bottom: 20%;
+            }
+            p{
+                font-family: Arima;
+                color: white;
+                font-size: 30px;
+                position: relative;
+                bottom: 10px;
+                left: 5px;
+                display: none;
+            }
         }
     }
     .mapDiv{
@@ -150,6 +203,47 @@
             height: 80px;
             background-color: #a5243a;
             border-radius: 100px;
+
+            gap: 0px;
+            overflow: hidden;
+
+            .socialItem{
+                margin: 0 auto;
+                width: 100%;
+                display: flex;
+                text-decoration: none !important;
+
+                background-image: linear-gradient(180deg, #a5243a, #ec3150);
+                transition: background-position 0.3s ease, background-size 0.3s ease;
+                background-size: 100% 600%;
+                background-position: 0 0;
+            }
+            .socialItem:hover{
+                background-position: 0 100%;
+                background-size: 100% 100%;
+            }
+            .centerIt{
+                margin: 0 auto !important;
+                display: flex !important;
+            }
+            img{
+                height: 60%;
+                position: relative;
+                top: 20%;
+                bottom: 20%;
+                right: 35%;
+                left: 35%;
+                
+            }
+            p{
+                font-family: Arima;
+                color: white;
+                font-size: 30px;
+                position: relative;
+                bottom: 10px;
+                left: 5px;
+                display: none !important;
+            }
         }
     }
     .mapDiv{
