@@ -32,6 +32,29 @@
             height: 80px;
             background-color: #a5243a;
             border-radius: 100px;
+            display: flex;
+            gap: 100px;
+            overflow: hidden;
+
+            .socialItem{
+                margin: 0 auto;
+                display: flex;
+            }
+            img{
+                height: 80%;
+                position: relative;
+                top: 10%;
+                bottom: 10%;
+            }
+            p{
+                font-family: Arima;
+                color: white;
+                font-size: 30px;
+                position: relative;
+                bottom: 10px;
+                left: 5px;
+                right: 5px;
+            }
         }
     }
     .mapDiv{
