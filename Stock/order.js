@@ -312,6 +312,7 @@ function startOrderAnimation() {
     const cart = document.querySelector('.shopping-cart');
     const checkmark = document.querySelector('.checkmark');
     const checkmarkPath = document.querySelector('.checkmark-path');
+    document.getElementById("footerPlace").style.opacity = 0;
 
     modal.classList.add('active');
 
